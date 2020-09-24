@@ -1,0 +1,8 @@
+names=["Divya","Nakul","Asmita"]
+for name in list1:
+    url="https://inputtools.google.com/request"
+    para={"text":name,"itc":"hi-t-i0-und","num":13,"cp":0,"cs":1,"ie":"utf-8","oe":"utf-8","app":"demopage"}
+    r=requests.get(url=url,params=para)
+    data=r.json()
+    #print(data)
+    print(data[1][0][1][0],end=" ")
