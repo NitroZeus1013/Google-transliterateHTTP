@@ -1,3 +1,4 @@
+import requests
 names=["Divya","Nakul","Asmita"]
 for name in list1:
     url="https://inputtools.google.com/request"
